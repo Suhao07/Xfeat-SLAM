@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.26)
+cmake_minimum_required(VERSION 3.16)
 project(hiox)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -6,9 +6,9 @@ set(CMAKE_CXX_STANDARD 17)
 find_package(OpenCV REQUIRED)
 
 # onnxruntime
-#set(ONNXRUNTIME_ROOT D:/Software/onnxruntime-win-x64-1.18.0)
+#set(ONNXRUNTIME_ROOT ./onnxruntime-linux-x64-1.18.1)
 set(ONNXRUNTIME_INCLUDE_DIRS ${ONNXRUNTIME_ROOT}/include)
-set(ONNXRUNTIME_LIBS ${ONNXRUNTIME_ROOT}/lib/onnxruntime.lib)
+set(ONNXRUNTIME_LIBS ${ONNXRUNTIME_ROOT}/lib/onnxruntime.so)
 
 include_directories(
         ${ONNXRUNTIME_INCLUDE_DIRS}

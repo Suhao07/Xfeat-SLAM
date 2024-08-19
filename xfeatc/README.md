@@ -11,7 +11,7 @@ Download onnxruntime suitable for your system from [here](https://github.com/mic
 ### 2. Build
 ```bash
 mkdir build && cd build
-cmake .. -DONNXRUNTIME_ROOT=D:/software/onnxruntime-win-x64-1.18.0
+cmake .. -DONNXRUNTIME_ROOT=./onnxruntime-linux-x64-1.18.1
 make -j3
 ```
 
